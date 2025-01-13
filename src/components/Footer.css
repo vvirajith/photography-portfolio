@@ -1,0 +1,42 @@
+.footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+    
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-content p {
+      margin: 0.5rem 0;
+    }
+    
+    .social-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+      padding: 0;
+    }
+    
+    .social-links li {
+      display: inline;
+    }
+    
+    .social-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+      color: #007bff;
+    }
+    
