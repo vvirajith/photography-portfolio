@@ -1,22 +1,71 @@
+/* General Gallery Styling */
 .gallery {
-      padding: 2rem;
-      text-align: center;
-    }
-    
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    
-    .photo img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .photo p {
-      margin-top: 0.5rem;
-      font-size: 1rem;
-    }
-    
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #a25fff, #feb47b); /* Gradient background */
+  color: white;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Grid Layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Individual Photo Card */
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+
+.photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Photo Styling */
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+/* Title Overlay */
+.photo p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.photo:hover p {
+  opacity: 1;
+}

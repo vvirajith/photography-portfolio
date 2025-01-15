@@ -5,12 +5,22 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>My Photography</h1>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
+      <div className="navbar-brand">
+        <h1>Adi Snapshot</h1>
+      </div>
+      <ul className="navbar-links">
+        <li>
+          <Link to="/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/gallery">Gallery</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
       </ul>
     </nav>
   );
