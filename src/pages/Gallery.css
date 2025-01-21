@@ -1,7 +1,7 @@
 /* General Gallery Styling */
 .gallery {
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #a25fff, #feb47b); /* Gradient background */
+  background: linear-gradient(to bottom, #000000df, #1d1c1c); /* Gradient background */
   color: white;
   text-align: center;
 }

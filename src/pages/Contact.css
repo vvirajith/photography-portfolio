@@ -1,25 +1,85 @@
 .contact {
-      padding: 2rem;
-      text-align: center;
-      background-color: #e9ecef;
-    }
-    
-    .contact h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    
-    .contact p {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-    
-    .contact a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    
+  padding: 3rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: linear-gradient(135deg, #f0f4f8, #cfd8dc);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0d47a1;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.contact p a {
+  color: #0d47a1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact p a:hover {
+  text-decoration: underline;
+  color: #1565c0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.social-links img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer enhancements */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ddd;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
